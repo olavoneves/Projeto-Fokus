@@ -2,11 +2,11 @@
 const html = document.querySelector('html')
 
 // Variaveis para capturar os valores dos botões no html
-const buttonFoco = document.querySelector('.app__card-button--foco active')
+const buttonFoco = document.querySelector('.app__card-button--foco')
 
 const buttonCurto = document.querySelector('.app__card-button--curto')
 
-const buttonLongo = document.querySelector('.app__card-button--longoapp__card-button--longo')
+const buttonLongo = document.querySelector('.app__card-button--longo')
 
 buttonFoco.addEventListener('click', () => { 
     html.setAttribute('data-contexto', 'foco') 
