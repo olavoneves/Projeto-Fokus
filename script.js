@@ -2,15 +2,11 @@
 const html = document.querySelector('html')
 
 // Variaveis para capturar os valores dos botões no html
-const buttonFoco = document.getElementsByClassName('app__card-button--foco active')
+const buttonFoco = document.querySelector('.app__card-button--foco active')
 
-const buttonCurto = document.getElementsByClassName('app__card-button--curto')
+const buttonCurto = document.querySelector('.app__card-button--curto')
 
-const buttonLongo = document.getElementsByClassName('app__card-button--longo')
-
-// Nossa variavel botão foco chamou a função addEventListener que vai ser responsável por fazer a gente saber quando algo vai acontecer. Nesse caso quando alguém clicar no botão foco
-// => é uma arrowFunction, ou seja simplesmente está substituindo a palavra function, faz a msm coisa
-// setAttribute(set de alterar, ou seja alterar o atributo) pergunta a partir de dois parametros, qual elemento você quer alterar
+const buttonLongo = document.querySelector('.app__card-button--longoapp__card-button--longo')
 
 buttonFoco.addEventListener('click', () => { 
     html.setAttribute('data-contexto', 'foco') 
