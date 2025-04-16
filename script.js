@@ -6,6 +6,7 @@ const buttonFoco = document.querySelector('.app__card-button--foco')
 const buttonCurto = document.querySelector('.app__card-button--curto')
 const buttonLongo = document.querySelector('.app__card-button--longo')
 
+const title = document.querySelector('.app__title')
 const banner = document.querySelector('.app__image')
 const buttonsDestaque = document.querySelectorAll('.app__card-button')
 
@@ -30,4 +31,26 @@ function alterarContexto(contexto) {
     buttonsDestaque.forEach(function (contexto) {
         contexto.classList.remove('active')
     })
+    switch (contexto) {
+        case 'foco':
+            `Otimize sua produtividade,<br>
+                <strong class="app__title-strong">
+                    mergulhe no que importa.
+                </strong>`
+            break;
+        case 'descanso-curto':
+            `Otimize sua produtividade,<br>
+                <strong class="app__title-strong">
+                    mergulhe no que importa.
+                </strong>`
+            break;
+        case 'descanso-longo':
+            `Otimize sua produtividade,<br>
+                <strong class="app__title-strong">
+                    mergulhe no que importa.
+                </strong>`
+            break;
+        default:
+            break;
+    }
 }
